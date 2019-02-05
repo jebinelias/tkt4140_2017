@@ -34,11 +34,11 @@ z[0] = z_0
 v[0] = v_0
 for n in range(N):
     
-    dzdt, dvdt = fFunc(t, z[n], v[n])
+    dzdt, dvdt = fFunc(t[n], z[n], v[n])
     z_p = z[n] + dt*dzdt
     v_p = v[n] + dt*dvdt
     
-    dzdt_p, dvdt_p = fFunc(t, z_p, v_p)
+    dzdt_p, dvdt_p = fFunc(t[n + 1], z_p, v_p)
     
     z[n + 1] = z[n] + dt*(dzdt + dzdt_p)/2
     v[n + 1] = v[n] + dt*(dvdt + dvdt_p)/2
