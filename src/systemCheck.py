@@ -10,40 +10,40 @@ def systemCheck():
 
     '''
     installed = " ... installed!"
-    print ""
-    print "Check for necessary modules needed for the course tkt4140"
-    print ""
+    print("")
+    print("Check for necessary modules needed for the course tkt4140")
+    print("")
     
-    print "check for matplotlib ",
+    print("check for matplotlib ", end=' ')
     try:
         import matplotlib.pyplot 
-        print installed
+        print(installed)
     except:
-        print " IMPORT ERROR; no version of matplotlib.pyplot found"
+        print(" IMPORT ERROR; no version of matplotlib.pyplot found")
        
         
-    print "check for numpy      ",
+    print("check for numpy      ", end=' ')
     try:
         import numpy
-        print installed
+        print(installed)
         
     except:
-        print " IMPORT ERROR; no version of numpy found"
+        print(" IMPORT ERROR; no version of numpy found")
     
-    print "check for scipy      ",
+    print("check for scipy      ", end=' ')
     try:
         import scipy
-        print installed
+        print(installed)
     except:
-        print " IMPORT ERROR; no version of scipy found"
+        print(" IMPORT ERROR; no version of scipy found")
         
 
-    print "check for sympy      ",
+    print("check for sympy      ", end=' ')
     try:
         import sympy
-        print installed
+        print(installed)
     except:
-        print " IMPORT ERROR; no version of sympy found"
+        print(" IMPORT ERROR; no version of sympy found")
     
 
 if __name__ == '__main__':
